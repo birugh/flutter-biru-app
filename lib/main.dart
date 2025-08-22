@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'widgets/custom_button.dart';
-
+import 'widgets/custom_text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,10 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, // center items column
-            children: [CustomButtonWidget(text: 'Biru', onPressed: () {})],
+            children: [
+              CustomButtonWidget(text: 'Biru', onPressed: () {}),
+              CustomTextWidget(text: 'Biru'),
+            ],
           ),
         ),
       ),
